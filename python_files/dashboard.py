@@ -48,7 +48,7 @@ def load_data():
     """Load and preprocess the SuperStore dataset"""
     try:
         # Replace 'SuperStoreUS.csv' with your actual file path
-        df = pd.read_csv('SuperStoreUS.csv')
+        df = pd.read_csv('datasets/SuperStoreUS.csv')
         
         # Data preprocessing
         df['Order Date'] = pd.to_datetime(df['Order Date'])
